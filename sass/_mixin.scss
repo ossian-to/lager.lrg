@@ -1,0 +1,25 @@
+//triangle
+//+triangle(30px,red,left)
+@import "mixin/triangle";
+//@include bg('filename')
+@import "mixin/backgroundurl";
+//@include scrollbars(.5em, slategray);
+@import "mixin/scrollbars";
+//@include card(1~4);
+@import "mixin/shadow";
+
+@import "mixin/clearfix";
+@import "mixin/halfborder";
+@import "mixin/bgrd";
+@import "mixin/block";
+@import "mixin/font";
+//置中
+@mixin center-block{
+	margin:0 auto;
+}
+
+@mixin border{
+	border: 1px solid #000; 
+}
+
+@import "mixin/o-set"; // 2022/12/07 - by ossian

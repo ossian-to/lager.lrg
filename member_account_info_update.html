@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.ico">
+    <title>::搖滾火箭::</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <!-- fb_OpenGraph -->
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="!">
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main-top-sec">
+            <a href="#" class="main-logo">
+                <img src="images/logo.svg" />
+            </a>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#"><span class="w-pink">RG</span>新聞</a></li>
+                    <li><a href="#"><span class="w-pink">RG</span>遊戲</a></li>
+                    <li><a href="#"><span class="w-pink">客服</span>中心</a></li>
+                    <li><a href="#"><span class="w-pink">會員</span>中心</a></li>
+                </ul>
+                <div class="nav-login">
+                    <ul>
+                        <li><a href="#">登入會員</a></li>
+                        <li><a href="#">加入會員</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="rg-banner-bg">
+            <div class="rg-banner-title">
+                <span class="rg-banner-title-cn"><img src="images/rg_title_deco_l.png"
+                        style="margin-right:10px;">會員中心<img src="images/rg_title_deco_r.png"
+                        style="margin-left:10px;"></span>
+                <span class="rg-banner-title-en">MEMBER CENTER</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <div class="bread-crumb">
+                    <a href="#">首頁</a>
+                    <span class="arrow">></span>
+                    <a href="#">會員中心</a>
+                    <span class="arrow">></span>
+                    <a class="current-link">帳號資料</a>
+                </div>
+
+                <div class="aside-menu">
+                    <ul>
+                        <li><a href="#" class="ac">
+                                <div class="icon-box"><img src="images/mem_icon1.svg" class="icon"></div>帳號資料
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon2.svg" class="icon"></div>身分認證
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon3.svg" class="icon"></div>我的遊戲
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon4.svg" class="icon"></div>個人訊息信箱
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon5.svg" class="icon"></div>安全性
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon6.svg" class="icon"></div>付費管道
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon7.svg" class="icon"></div>交易歷史紀錄
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="r-frame-box">
+                    <p class="t2">會員帳號詳細資料</p>
+                    <p>
+                        <label class="label-style"><span class="pink">LRG平台帳號：</span>abcdefg12345</label>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">LRG平台帳號數字ID：</span>123456789</label>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">LRG平台帳號狀態：</span>未完成email驗證</label>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">LRG平台會員點數：</span>99999點</label>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">LRG平台暱稱：</span>呂安安</label><button
+                            class="btn-style-gray-s nickname-update">更新</button>
+                        <input name="" type="text" maxlength="20" class="form-text nickname-text dn"
+                            placeholder="請輸入暱稱">
+                    </p>
+                    <p class="t2">基本資料</p>
+                    <p>
+                        <label class="label-style"><span class="pink">真實姓名：</span></label>
+                        <input name="" type="text" maxlength="20" class="form-text" placeholder="請輸入您的真實姓名">
+                        <span class="notice">(第一次填寫後，不可再修改)</span>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">性別：</span></label>
+                        <input id="sex_m" type="radio" name="sex" value="M">
+                        <label for="sex_m">男性</label>
+                        <input id="sex_f" type="radio" name="sex" value="F">
+                        <label for="sex_f">女性</label>
+                        <span class="notice">(第一次填寫後，不可再修改)</span>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">國家/地區：</span></label>
+                        <select name="" class="form-select report-select">
+                            <option>請選擇</option>
+                            <option>台灣</option>
+                            <option>港澳</option>
+                            <option>其他地區</option>
+                        </select>
+                        <span class="notice">(第一次填寫後，不可再修改)</span>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">身分證字號：</span>尚未填寫，請前往<a href="#"
+                                class="pink-link">身分認證</a>內進行填寫</label>
+                        <span class="notice_box">
+                            ※請輸入真實個人資料，以免日後無法為您核對帳號身分。<br>
+                            ※經輸入確定即無法線上修改。<br>
+                            ※單一身分證件僅對應一個會員帳號
+                        </span>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">生日(西元年/月/日)：</span></label>
+                        <input type="date" class="form-date">
+                        <span class="notice">(第一次填寫後，不可再修改)</span>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">Email：</span>abcd@gmail.com</label>
+                        <button class="btn-style-gray-s email-update">更新</button>
+                        <span class="email-box dn">
+                            <input name="" type="text" maxlength="20" class="form-text" placeholder="請輸入Email">
+                            <button id="get-email-verify-button" class="btn-style-gray get-email-verify-button"
+                                style="margin-top: 12px; ">點我驗證Email</button>
+                            <!-- 點驗證email按鈕之後出現的驗證欄位 -->
+                            <span class="email-verify-box">
+                                <input type="text" class="form-text email-verify" placeholder="請輸入驗證碼">
+                                <span class="email-verify-countdown"></span>
+                                <button class="confirm-email-verify-button btn-style-red"
+                                    id="confirm-email-verify-button">確認驗證碼</button>
+                                <span class="nonreceive-code">沒有取得認證碼? <a class="pink-link">重新發送認證郵件</a></span>
+                            </span>
+                            <!-- 通過驗證 -->
+                            <span class="verify-check-success phone-verify-check-success"><span
+                                    class="success-check"><img src="images/check.svg" alt=""></span>您的Email已通過驗證</span>
+                            <!-- 未通過驗證 -->
+                            <span class="verify-check-fail phone-verify-check-fail"><span class="success-error"><img
+                                        src="images/error.svg" alt=""></span>您的Email未通過驗證</span>
+                        </span>
+
+                        <span class="notice_box">
+                            ※若email需修改，則需要先完成身分認證，再通過安全性系統驗證才可進行修正。<br>
+                            ※若email於1小時內，無法收到驗證信件，請更換其他家信箱再重新進行驗證。<br>
+                        </span>
+                    </p>
+
+                    <p>
+                        <label class="label-style"><span class="pink">手機號碼：</span><span>0988123456</span></label><button
+                            class="btn-style-gray-s phone-update">更新</button>
+                        <span class="phone-upadate-box dn">
+                            <select name="" class="form-select phone-update-area">
+                                <option value="886">+886 (台灣Taiwan)</option>
+                                <option value="852">+852 (香港Hongkong)</option>
+                                <option value="853">+853 (澳門Macao)</option>
+                                <option value="000">其他地區</option>
+                            </select>
+                            <input name="" type="text" maxlength="20" class="form-text form-text-tel phone-update-text "
+                                placeholder="請輸入完整手機號碼">
+
+                        </span>
+
+                        <button id="get-phone-verify-button" class="btn-style-gray get-phone-verify-button dn"
+                            style="margin-top: 12px;">點我驗證手機</button>
+                        <!-- 點驗證手機按鈕之後出現的驗證欄位 -->
+                        <span class="phone-verify-box">
+                            <input type="text" class="form-text phone-verify" placeholder="請輸入驗證碼">
+                            <span class="phone-verify-countdown"></span>
+                            <button class="confirm-phone-verify-button btn-style-red"
+                                id="confirm-phone-verify-button">確認驗證碼</button>
+                            <span class="nonreceive-code">沒有取得認證碼? <a class="pink-link">重新發送認證郵件</a></span>
+                        </span>
+                        <!-- 通過驗證 -->
+                        <span class="verify-check-success phone-verify-check-success"><span class="success-check"><img
+                                    src="images/check.svg" alt=""></span>您的手機號碼已通過驗證</span>
+                        <!-- 未通過驗證 -->
+                        <span class="verify-check-fail phone-verify-check-fail"><span class="success-error"><img
+                                    src="images/error.svg" alt=""></span>您的手機號碼未通過驗證</span>
+                        <span class="notice_box">
+                            ※若手機號碼需要修改，則需要先完成身分認證，再通過安全性系統驗證才可進行修正。<br>
+                            ※若手機設有簡訊封鎖或阻擋功能，請先關閉後再進行驗證。<br>
+                            ※單一手機門號僅對應一個會員帳號
+                        </span>
+                    </p>
+                    <p>
+                        <label class="label-style"><span class="pink">地址：</span>336台北市萬華區莒光路336號2樓</label>
+                        <button class="btn-style-gray-s address-update">更新</button>
+                        <span class="address-box dn">
+                            <select name="" class="form-select city-select">
+                                <option value="">請選擇</option>
+                                <option value="臺北市">臺北市</option>
+                                <option value="基隆市">基隆市</option>
+                                <option value="新北市">新北市</option>
+                                <option value="宜蘭縣">宜蘭縣</option>
+                                <option value="新竹市">新竹市</option>
+                                <option value="新竹縣">新竹縣</option>
+                                <option value="桃園市">桃園市</option>
+                                <option value="苗栗縣">苗栗縣</option>
+                                <option value="臺中市">臺中市</option>
+                                <option value="彰化縣">彰化縣</option>
+                                <option value="南投縣">南投縣</option>
+                                <option value="嘉義市">嘉義市</option>
+                                <option value="嘉義縣">嘉義縣</option>
+                                <option value="雲林縣">雲林縣</option>
+                                <option value="臺南市">臺南市</option>
+                                <option value="高雄市">高雄市</option>
+                                <option value="澎湖縣">澎湖縣</option>
+                                <option value="金門縣">金門縣</option>
+                                <option value="屏東縣">屏東縣</option>
+                                <option value="臺東縣">臺東縣</option>
+                                <option value="花蓮縣">花蓮縣</option>
+                            </select>
+                            <!-- 根據所選區域跳出相對應的區域 -->
+                            <select name="" class="form-select area-select">
+                                <option value="">請選擇</option>
+                            </select>
+                            <input name="" type="text" class="form-text address-text" placeholder="請輸入詳細地址">
+                        </span>
+
+                        <span class="notice_box">
+                            ※參加活動獲得實體獎品時，將會郵寄至此地址給您(限台灣地區)
+                        </span>
+                    </p>
+                    <div class="form-rule">
+                        <input id="agree" class="agree-checkbox" type="checkbox" name="agree">
+                        <label for="agree">我已閱讀並同意<a href="#" class="pink-link">服務條款</a> 及<a href="#"
+                                class="pink-link">隱私權政策</a>；如未滿20歲，已取得法定代理人同意。</label>
+                    </div>
+                    <div class="btns-box">
+                        <button class="btn-style-gray">取消重填</button>
+                        <button class="btn-style-pink">確認修改</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-btn">
+                <a href="#" target="_blank">遊戲問題反映</a>
+                <a href="#" target="_blank">個人資料暨隱私權保護政策</a>
+            </div>
+            <div class="footer-info">
+                <p>服務時間：星期一至星期五，AM9:30~PM6:00</p>
+                <p>雷爵網絡科技股份有限公司 ©2022 Lager Network Technologies Inc. All rights reserved.</p>
+            </div>
+            <div class="lager-logo"><img src="images/lager_logo.svg" /></div>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script>
+        // 傳送email驗證碼倒數計時
+        $(function () {
+            var v_box = $(".email-verify-box");
+            var email_verify_btn = $(".get-email-verify-button");
+            var location_select = $(".location-select");
+            var email_input = $(".email-input");
+            var email_countdown = $(".email-verify-countdown");
+            $(function () {
+                email_verify_btn.click(settime);
+            })
+            var countdown = 5;
+            function settime() {
+                if (countdown == 0) {
+                    email_countdown.html("重新傳送");
+                    return;
+                } else {
+                    location_select.attr("disabled", true);
+                    email_input.attr("disabled", true);
+                    location_select.addClass("disabled");
+                    email_input.addClass("disabled");
+                    email_verify_btn.addClass("dn");
+                    email_verify_btn.attr("disabled", true);
+                    email_countdown.html(countdown + "s");
+                    countdown--;
+                    v_box.addClass("db");
+                }
+                setTimeout(settime, 1000);
+            }
+        })
+        // 傳送phone驗證碼倒數計時
+        $(function () {
+            var v_box = $(".phone-verify-box");
+            var phone_verify_btn = $(".get-phone-verify-button");
+            var location_select = $(".location-select");
+            var phone_input = $(".phone-input");
+            var phone_countdown = $(".phone-verify-countdown");
+            $(function () {
+                phone_verify_btn.click(settime);
+            })
+            var countdown = 5;
+            function settime() {
+                if (countdown == 0) {
+                    phone_countdown.html("重新傳送");
+                    return;
+                } else {
+                    location_select.attr("disabled", true);
+                    phone_input.attr("disabled", true);
+                    location_select.addClass("disabled");
+                    phone_input.addClass("disabled");
+
+                    phone_verify_btn.attr("disabled", true);
+                    phone_countdown.html(countdown + "s");
+                    countdown--;
+                    v_box.addClass("db");
+                    phone_verify_btn.removeClass("db").addClass("dn");
+                }
+                setTimeout(settime, 1000);
+            }
+        })
+
+        $('.phone-update').click(function () {
+            $('.phone-upadate-box , .get-phone-verify-button').addClass('db');
+        });
+        $('.nickname-update').click(function () {
+            $('.nickname-text').addClass('db');
+        });
+        $('.address-update').click(function () {
+            $('.address-box').addClass('db');
+        });
+
+        $('.email-update').click(function () {
+            $('.email-box').addClass('db');
+        });
+    </script>
+</body>
+
+</html>

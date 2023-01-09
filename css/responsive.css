@@ -1,0 +1,268 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@media screen and (max-width: 1200px) {
+  .inner {
+    padding: 0 4%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .game-item {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .m-frame-box {
+    width: 90%;
+  }
+
+  .mem-cont {
+    padding: 5%;
+  }
+
+  .game-item {
+    width: 48%;
+  }
+
+  .game-btns {
+    display: none;
+  }
+
+  .m-game-btns {
+    display: flex;
+  }
+
+  .rg-banner-bg {
+    height: 100px;
+    margin-top: 65px;
+  }
+
+  .main-top-sec:before {
+    height: 3px;
+  }
+
+  .main-logo img {
+    width: 105px;
+  }
+
+  .rg-banner-title-cn {
+    font-size: 25px;
+  }
+  .rg-banner-title-cn img {
+    width: 15px;
+  }
+
+  .rg-banner-title-en {
+    font-size: 16px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+    position: fixed;
+    display: block;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .main-top-sec {
+    position: fixed;
+    z-index: 99;
+    height: 65px;
+  }
+
+  .nav-menu {
+    display: block;
+    margin-left: 0;
+  }
+  .nav-menu li {
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #C1C1C1;
+  }
+  .nav-menu li a {
+    color: #4D4D4D;
+  }
+  .nav-menu li a:before, .nav-menu li a:after {
+    display: none;
+  }
+  .nav-menu li a .w-pink {
+    color: #E95389;
+  }
+
+  .nav-login {
+    margin-top: 20px;
+    display: block;
+  }
+  .nav-login ul {
+    display: block;
+    width: 100%;
+  }
+  .nav-login ul li {
+    width: 50%;
+    border: 1px solid #C1C1C1;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .nav-login ul li a {
+    height: 100%;
+    line-height: 38px;
+    color: #4D4D4D;
+  }
+  .nav-login ul li:before {
+    display: none;
+  }
+
+  .main-logo {
+    margin-left: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .aside-menu {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .aside-menu ul {
+    display: table;
+    word-spacing: -1em;
+    justify-content: center;
+  }
+  .aside-menu ul li {
+    display: inline-block;
+    width: auto;
+    border-bottom: transparent;
+  }
+  .aside-menu ul li a {
+    font-size: 14px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+  }
+
+  .r-frame-box {
+    width: 100%;
+    float: none;
+    padding: 7%;
+  }
+
+  .report-btns {
+    display: block;
+  }
+  .report-btns a {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .report-item {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #C1C1C1;
+  }
+
+  .report-info {
+    flex-wrap: wrap;
+  }
+  .report-info div {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .personal-message-table-style-th, .personal-message-table-style {
+    min-width: 580px;
+  }
+
+  .personal-message-list {
+    overflow-x: scroll;
+  }
+
+  .point-link {
+    width: 48%;
+    margin-right: 1%;
+  }
+  .point-link img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .footer-btn {
+    display: block;
+    height: auto;
+    padding: 5%;
+  }
+  .footer-btn a {
+    width: 95%;
+    margin: 10px 0;
+  }
+
+  .login-link a {
+    font-size: 13px;
+  }
+
+  .content {
+    padding-top: 5%;
+  }
+
+  .form-select {
+    width: 100%;
+  }
+
+  .form-text-tel {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .confirm-phone-verify-button, .confirm-email-verify-button {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .phone-verify, .email-verify {
+    width: 100%;
+  }
+
+  .phone-verify-countdown, .email-verify-countdown {
+    display: block;
+    margin: 12px 0 0 0;
+  }
+
+  .game-item {
+    width: 100%;
+  }
+
+  .confirm-phone-verify-button, .confirm-email-verify-button {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .id-vertify-method {
+    display: block;
+    line-height: 24px;
+  }
+
+  .prev-page-btn {
+    width: 100%;
+  }
+
+  .point-link {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 12px;
+    height: auto;
+  }
+  .point-link img {
+    width: 100%;
+  }
+}

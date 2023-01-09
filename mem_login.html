@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.ico">
+    <title>::搖滾火箭::</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <!-- fb_OpenGraph -->
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="!">
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="login-top-sec">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" />
+            </a>
+        </div>
+
+        <div class="content">
+            <!--會員登入頁面-->
+            <div class="ps">會員登入頁面</div>
+            <div class="m-frame-box">
+                <div class="mem-title"><span class="pink">會員</span>登入</div>
+                <div class="mem-cont">
+                    <p>
+                        <label class="label-style">會員帳號：</label>
+                        <input name="" type="text" maxlength="20" class="form-text" placeholder="請輸入手機號碼或電子郵件">
+                    </p>
+                    <p>
+                        <label class="label-style">會員密碼：</label>
+                        <input name="" type="text" maxlength="20" class="form-text" placeholder="請輸入會員密碼">
+                    </p>
+                    <button class="btn-style-pink">會員登入</button>
+                    <div class="login-link">
+                        <li><a href="#">會員註冊</a></li>
+                        <li><a href="#">忘記帳號</a></li>
+                        <li><a href="#">忘記密碼</a></li>
+                    </div>
+                </div>
+            </div>
+            <!--會員登入(雙重驗證)-->
+            <div class="ps">會員登入(雙重驗證)</div>
+            <div class="m-frame-box">
+                <div class="mem-title">輸入<span class="pink">驗證碼</span></div>
+                <div class="mem-cont">
+                    <p>請於3分鐘內，輸入驗證器密碼</p>
+                    <p>剩餘時間：<span class="pink">02:59</span></p>
+                    <p>
+                        <label class="label-style">驗證器密碼：</label>
+                        <input name="" type="text" maxlength="20" class="form-text" placeholder="請輸入驗證器密碼">
+                    </p>
+                    <button class="btn-style-pink">確定</button>
+                </div>
+            </div>
+            <!--會員登入(雙重驗證) - 通過-->
+            <div class="ps">會員登入(雙重驗證) - 通過</div>
+            <div class="m-frame-box">
+                <div class="mem-title"><span class="pink">通過驗證</span></div>
+                <div class="mem-cont">
+                    <p>歡迎，尊敬的玩家，您好</p>
+                    <p>祝您有美好的一天</span></p>
+                    <button class="btn-style-pink">確定</button>
+                </div>
+            </div>
+            <!--會員登入(雙重驗證) - 未通過-->
+            <div class="ps">會員登入(雙重驗證) - 未通過</div>
+            <div class="m-frame-box">
+                <div class="mem-title">輸入<span class="pink">驗證碼</span></div>
+                <div class="mem-cont">
+                    <p>請於3分鐘內，輸入驗證器密碼</p>
+                    <p>剩餘時間：<span class="pink">02:59</span></p>
+                    <p>
+                        <label class="label-style">驗證器密碼：</label>
+                        <input name="" type="text" maxlength="20" class="form-text" placeholder="請輸入驗證器密碼">
+                    </p>
+                    <button id="login-fail" class="btn-style-pink">確定</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-btn">
+                <a href="#" target="_blank">遊戲問題反映</a>
+                <a href="#" target="_blank">個人資料暨隱私權保護政策</a>
+            </div>
+            <div class="footer-info">
+                <p>服務時間：星期一至星期五，AM9:30~PM6:00</p>
+                <p>雷爵網絡科技股份有限公司 ©2022 Lager Network Technologies Inc. All rights reserved.</p>
+            </div>
+            <div class="lager-logo"><img src="images/lager_logo.svg" /></div>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script>
+        $(document).on('click', '#login-fail', function (e) {
+            swal({
+                html:
+                    '您好，<br>' +
+                    '您於2022/08/17 16:55 登入失敗<span class="pink">1</span> 次<br> ' +
+                    '<span class="pink">※請注意，如24小時內，登入失敗累積6次，為保護玩家帳號安全，系統將會自動暫時封鎖帳號，如您帳號被暫時封鎖，請至LRG客服中心進行詢問，謝謝。</span>',
+            })
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.ico">
+    <title>::搖滾火箭::</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <!-- fb_OpenGraph -->
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="!">
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main-top-sec">
+            <a href="#" class="main-logo">
+                <img src="images/logo.svg" />
+            </a>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#"><span class="w-pink">RG</span>新聞</a></li>
+                    <li><a href="#"><span class="w-pink">RG</span>遊戲</a></li>
+                    <li><a href="#"><span class="w-pink">客服</span>中心</a></li>
+                    <li><a href="#"><span class="w-pink">會員</span>中心</a></li>
+                </ul>
+                <div class="nav-login">
+                    <ul>
+                        <li><a href="#">登入會員</a></li>
+                        <li><a href="#">加入會員</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="rg-banner-bg">
+            <div class="rg-banner-title">
+                <span class="rg-banner-title-cn"><img src="images/rg_title_deco_l.png"
+                        style="margin-right:10px;">會員中心<img src="images/rg_title_deco_r.png"
+                        style="margin-left:10px;"></span>
+                <span class="rg-banner-title-en">MEMBER CENTER</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <div class="bread-crumb">
+                    <a href="#">首頁</a>
+                    <span class="arrow">></span>
+                    <a href="#">會員中心</a>
+                    <span class="arrow">></span>
+                    <a class="current-link">身分認證</a>
+                </div>
+
+                <div class="aside-menu">
+                    <ul>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon1.svg" class="icon"></div>帳號資料
+                            </a></li>
+                        <li><a href="#" class="ac">
+                                <div class="icon-box"><img src="images/mem_icon2.svg" class="icon"></div>身分認證
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon3.svg" class="icon"></div>我的遊戲
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon4.svg" class="icon"></div>個人訊息信箱
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon5.svg" class="icon"></div>安全性
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon6.svg" class="icon"></div>付費管道
+                            </a></li>
+                        <li><a href="#">
+                                <div class="icon-box"><img src="images/mem_icon7.svg" class="icon"></div>交易歷史紀錄
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="r-frame-box">
+                    <div class="title-style">
+                        <span class="pink">身分認證資料上傳</span>
+                    </div>
+                    <p>
+                        <label class="label-style"><span class="pink">實名認證方式：</span></label>
+                        <span class="id-vertify-method">
+                            <input id="taiwanId" type="radio" name="idVertify">
+                            <label for="taiwanId">台灣身分證</label>
+                            <input id="anotherID" type="radio" name="idVertify">
+                            <label for="anotherID">健保卡、港澳身分證、其他國家身分證</label>
+                        </span>
+                    </p>
+
+                    <p>
+                        <label class="label-style"><span class="pink">身分證字號：</span></label>
+                        <input name="" type="text" maxlength="20" class="form-text" placeholder="H123456789" disabled="disabled">
+                        <span class="notice">
+                            ※單一身分證號碼，每日最多只可驗證2次。
+                        </span>
+                    </p>
+                    <div class="taiwan-id-vetify-box">
+                        <p>
+                            身分證範本:<br><br>
+                            <img src="images/taiwan_id_template.jpg" alt="">
+                        </p>
+                        <p>
+                            <label class="label-style"><span class="pink">1.發證日期：</span></label>
+                            <span class="issue-date">
+                                <input name="" type="text" maxlength="4" class="form-text" placeholder="年(民國)" >
+                                <input name="" type="text" maxlength="4" class="form-text" placeholder="月" >
+                                <input name="" type="text" maxlength="4" class="form-text" placeholder="日" >
+                            </span>
+                        </p>
+                        <p>
+                            <label class="label-style db"><span class="pink">2.領補換類別： </span></label>
+                            <select name="" class="form-select" style="width: 100%;">
+                                <option>初發</option>
+                                <option>補發</option>
+                                <option>換發</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="form-rule">
+                        <input id="agree" class="agree-checkbox" type="checkbox" name="agree">
+                        <label for="agree">我已閱讀並同意<a href="#" class="pink-link">實名認證申請條件</a> 、<a href="#"
+                            class="pink-link">服務條款</a>及<a href="#" class="pink-link">隱私權政策</a>。</label>
+                    </div>
+                    <div class="btns-box">
+                        <button class="btn-style-gray">取消重填</button>
+                        <button class="btn-style-pink">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-btn">
+                <a href="#" target="_blank">遊戲問題反映</a>
+                <a href="#" target="_blank">個人資料暨隱私權保護政策</a>
+            </div>
+            <div class="footer-info">
+                <p>服務時間：星期一至星期五，AM9:30~PM6:00</p>
+                <p>雷爵網絡科技股份有限公司 ©2022 Lager Network Technologies Inc. All rights reserved.</p>
+            </div>
+            <div class="lager-logo"><img src="images/lager_logo.svg" /></div>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script>
+        // 傳送email驗證碼倒數計時
+        $(function () {
+            var v_box = $(".email-verify-box");
+            var email_verify_btn = $(".get-email-verify-button");
+            var location_select = $(".location-select");
+            var email_input = $(".email-input");
+            var email_countdown = $(".email-verify-countdown");
+            $(function () {
+                email_verify_btn.click(settime);
+            })
+            var countdown = 5;
+            function settime() {
+                if (countdown == 0) {
+                    email_countdown.html("重新傳送");
+                    return;
+                } else {
+                    location_select.attr("disabled", true);
+                    email_input.attr("disabled", true);
+                    location_select.addClass("disabled");
+                    email_input.addClass("disabled");
+                    email_verify_btn.addClass("dn");
+                    email_verify_btn.attr("disabled", true);
+                    email_countdown.html(countdown + "s");
+                    countdown--;
+                    v_box.addClass("db");
+                }
+                setTimeout(settime, 1000);
+            }
+        })
+        // 傳送phone驗證碼倒數計時
+        $(function () {
+            var v_box = $(".phone-verify-box");
+            var phone_verify_btn = $(".get-phone-verify-button");
+            var location_select = $(".location-select");
+            var phone_input = $(".phone-input");
+            var phone_countdown = $(".phone-verify-countdown");
+            $(function () {
+                phone_verify_btn.click(settime);
+            })
+            var countdown = 5;
+            function settime() {
+                if (countdown == 0) {
+                    phone_countdown.html("重新傳送");
+                    return;
+                } else {
+                    location_select.attr("disabled", true);
+                    phone_input.attr("disabled", true);
+                    location_select.addClass("disabled");
+                    phone_input.addClass("disabled");
+
+                    phone_verify_btn.attr("disabled", true);
+                    phone_countdown.html(countdown + "s");
+                    countdown--;
+                    v_box.addClass("db");
+                    phone_verify_btn.removeClass("db").addClass("dn");
+                }
+                setTimeout(settime, 1000);
+            }
+        })
+
+        $('.phone-update').click(function () {
+            $('.phone-upadate-box , .get-phone-verify-button').addClass('db');
+        });
+    </script>
+</body>
+
+</html>

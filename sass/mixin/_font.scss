@@ -1,0 +1,19 @@
+@mixin font400(){
+	font-family: 'Noto Sans TC';
+	font-weight: 400;
+}
+
+@mixin font500(){
+	font-family: 'Noto Sans TC';
+	font-weight: 500;
+}
+
+@mixin font700(){
+	font-family: 'Noto Sans TC';
+	font-weight: 700;
+}
+
+@mixin font900(){
+	font-family: 'Noto Sans TC';
+	font-weight: 900;
+}

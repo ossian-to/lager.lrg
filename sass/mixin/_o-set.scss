@@ -1,0 +1,81 @@
+@mixin o-set(){
+
+	/* 
+		2022/12/07 - by ossian
+		
+		新增 .o-set，目的如下：
+		1. 移除 p 的行高設定，
+		2. 改在 .men-cont.o-set 設定行高，避免影響到前人的設定值。
+		3. 重建一些被 reset 清除的標籤樣式，方便企劃人員日後的維護。
+
+		目前受影響的頁面如下：
+		1. privacy.html
+		2. cs_privacy.html
+
+	*/
+
+	&.o-set{
+		color: $m-gray;
+		line-height: 24px;
+		// 恢復 .men-cont.o-set 下面的 ul, ol 樣式 2022/12/07 - by ossian
+		ul, ol{
+			margin: 1em 1em 1em 2em;
+			padding: initial;
+			list-style: initial;
+		}
+		p{
+			color: unset;
+			line-height: unset;
+		}
+		// 恢復標題的大小
+		h1,h2,h3,h4,h5,h6{
+			padding: 0.75em 0;
+			color: black;
+		}
+		h1{
+			font-size: 1.5em;
+		}
+		h2{
+			font-size: 1.25em;
+		}
+		h3{
+			font-size: 1.175em;
+		}
+		h4{
+			font-size: 1.15em;
+		}
+		h5{
+			font-size: 1.125em;
+		}
+		h6{
+			font-size: 1em;
+		}
+		// 預設的 table 樣式 2022/12/07 - by ossian
+		table{
+			width: 100%;
+			border-collapse: collapse;
+			tr{
+				th{
+					text-align: center;
+					background-color: $ll-gray;
+				}
+				th,td{
+					padding: 0.25em 0.75em;
+					border:1px solid $l-gray;
+				}
+				&:hover{
+					background-color: $lll-gray;
+				}
+				&:nth-child(1){
+					&:hover{
+						background-color: unset;
+					}
+				}
+			}
+		}
+		// img 標籤的最大寬度為 100%
+		img{
+			max-width: 100%;
+		}
+	}
+}

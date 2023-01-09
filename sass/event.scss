@@ -1,0 +1,313 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import "compass/reset";
+@import "compass/css3"; // // 補 css3 的效果 2022/12/08
+@import "default";
+html * {
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1280px;
+    -webkit-text-size-adjust: 100%;
+    font-size: 100%;
+    background-color: #312324;
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.wrap {
+    width: 100%;
+    min-width: 1280px;
+    max-width: 1920px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+    height: 1477px;
+    background: url("../images/event/header_bg.png") center no-repeat;
+}
+
+.header_pic {
+    position: absolute;
+    left: 331px;
+    top: 330px;
+    width: 617px;
+    height: 709px;
+    background: url("../images/event/header_pic.png") center no-repeat;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: url("../images/event/copyright.jpg") center no-repeat, #000;
+}
+
+.logo {
+    display: block;
+    width: 201px;
+    height: 114px;
+    background: url("../images/event/logo.png") center no-repeat;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.right_btns {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    a {
+        display: block;
+        width: 67px;
+        height: 72px;
+        margin-right: 10px;
+    }
+}
+
+.right_btn1 {
+    background: url("../images/event/right_btn1.png") center no-repeat;
+    &:hover {
+        background: url("../images/event/right_btn1_ac.png") center no-repeat;
+    }
+}
+.right_btn2 {
+    background: url("../images/event/right_btn2.png") center no-repeat;
+    &:hover {
+        background: url("../images/event/right_btn2_ac.png") center no-repeat;
+    }
+}
+.right_btn3 {
+    background: url("../images/event/right_btn3.png") center no-repeat;
+    &:hover {
+        background: url("../images/event/right_btn3_ac.png") center no-repeat;
+    }
+}
+.right_btn_b {
+    display: block;
+    width: 120px !important;
+    height: 73px !important;
+    background: url("../images/event/right_btn4.png") center no-repeat;
+    &:hover {
+        background: url("../images/event/right_btn4_ac.png") center no-repeat;
+    }
+}
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.title {
+    position: absolute;
+    top: 70px;
+    left: 256px;
+    width: 761px;
+    height: 276px;
+    background: url("../images/event/title.png") center no-repeat;
+}
+
+.header_tag1 {
+    position: absolute;
+    top: 510px;
+    left: -20px;
+    width: 518px;
+    height: 295px;
+    background: url("../images/event/tag1.png") center no-repeat;
+}
+.header_tag2 {
+    position: absolute;
+    top: 481px;
+    left: 768px;
+    width: 518px;
+    height: 251px;
+    background: url("../images/event/tag2.png") center no-repeat;
+}
+
+.cont_box {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: -490px;
+    margin-bottom: 50px;
+}
+
+.tabs {
+    display: flex;
+    li {
+        width: 600px;
+        height: 115px;
+        @include border-radius(20px 20px 0 0);
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.tab1_btn {
+    background: url("../images/event/tab1_btn.png") center no-repeat, #b1d100;
+}
+
+.tab2_btn {
+    background: url("../images/event/tab2_btn.png") center no-repeat, #ff9f3a;
+}
+
+#tab1 {
+    background: #b1d100;
+}
+
+#tab2 {
+    background: #ff9f3a;
+}
+
+.tab1_color_bg_1 {
+    width: 100%;
+    background: #b1d100;
+    padding: 60px;
+}
+
+.tab1_color_bg_2 {
+    width: 100%;
+    background: #95b000;
+    padding: 60px;
+}
+
+.tab2_color_bg_1 {
+    width: 100%;
+    background: #ff9f3a;
+    padding: 60px;
+}
+
+.tab2_color_bg_2 {
+    width: 100%;
+    background: #e1811b;
+    padding: 60px;
+}
+
+
+.event_box {
+    width: 1000px;
+    height: auto;
+    padding: 70px;
+    @include border-radius(30px);
+    background: #3c2528;
+    @include box-shadow(0 5px 0 #6c830d);
+    margin: 0 auto;
+    padding: 130px 70px 70px 70px;
+}
+
+.event_box2 {
+    width: 1000px;
+    height: auto;
+    padding: 70px;
+    @include border-radius(30px);
+    background: #3c2528;
+    @include box-shadow(0 5px 0 #a26423);
+    margin: 0 auto;
+    padding: 130px 70px 70px 70px;
+}
+
+.title_box {
+    width: 100%;
+    position: absolute;
+    height: 156px;
+    text-align: center;
+    left: 0;
+    top: -26px;
+}
+
+.tab1_date {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #ff9f3a;
+    margin-bottom: 10px;
+}
+
+.tab2_date {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #b1d100;
+    margin-bottom: 10px;
+}
+
+.desc {
+    width: 100%;
+    text-align: center;
+    color: #ff9f3a;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+p{
+    line-height: 24px;
+    color:#fff;
+    margin-bottom: 5px;
+}
+
+.s1-st {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 7px;
+    color: #b1d100;
+    padding: 0 10px;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 13px;
+        left: -5px;
+        top: 10px;
+        background: url('../images/event/word_deco.png') no-repeat center;
+    }
+}
+.s2-st {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 7px;
+    color: #ff9f3a;
+    padding: 0 10px;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 13px;
+        left: -5px;
+        top: 10px;
+        background: url('../images/event/word_deco2.png') no-repeat center;
+    }
+}
+
+.ol-style {
+    list-style: decimal;
+    li {
+        color: #fff;
+        margin-left: 1.5em;
+        line-height: 20px;
+        margin-bottom: 0px;
+        margin-bottom: 5px;
+    }
+}

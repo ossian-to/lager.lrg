@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.ico">
+    <title>::搖滾火箭::</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <!-- fb_OpenGraph -->
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="!">
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="login-top-sec">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" />
+            </a>
+        </div>
+        <div class="content">
+            <div class="m-frame-box">
+                <div class="mem-title">查詢<span class="pink">密碼</span></div>
+                <div class="mem-cont">
+                    <p>
+                        如果您忘記您的會員帳號，請輸入以下該會員帳號註冊時填寫的資料。<br>
+                        如有問題請洽客服中心，客服人員將竭誠為您服務，謝謝。<br>
+                        <span class="pink">請注意，如您當初未完成「會員資料補齊」和「雙重驗證功能」，您將無法使用查詢密碼功能。</span>
+                    </p>
+                    <p>
+                        <label class="label-style">會員帳號：</label>
+                        <input name="" type="text" maxlength="20" class="form-text" placeholder="請輸入手機號碼或電子郵件">
+                    </p>
+                    <p>
+                        <label class="label-style">身分證號碼：</label>
+                        <input name="" type="text" maxlength="20" class="form-text" placeholder="請輸入身分證號碼">
+                        <span class="notice">(外籍人士請輸入註冊帳號時登記的證件號碼)</span>
+                    </p>
+
+
+                    <button class="btn-style-pink">送出</button>
+
+                </div>
+            </div>
+
+            <!--查詢密碼(輸入驗證碼)-->
+            <div class="ps">查詢密碼(輸入驗證碼)</div>
+            <div class="m-frame-box">
+                <div class="mem-title">輸入<span class="pink">驗證碼</span></div>
+                <div class="mem-cont">
+                    <p>請於3分鐘內，輸入驗證器密碼</p>
+                    <p>剩餘時間：<span class="pink">02:59</span></p>
+                    <p>
+                        <label class="label-style">驗證器密碼：</label>
+                        <input name="" type="text" maxlength="20" class="form-text" placeholder="請輸入驗證器密碼">
+                    </p>
+                    <button class="btn-style-pink">確定</button>
+                </div>
+            </div>
+
+            <!--查詢密碼(驗證成功)-->
+            <div class="ps">查詢密碼(驗證成功)</div>
+            <div class="m-frame-box">
+                <div class="mem-title">驗證成功</div>
+                <div class="mem-cont">
+                    <p>您已通過驗證。</p>
+                    <p>您的密碼是<span class="pink">abcdefgh</span></p>
+                    <div class="notice_box">
+                        ※搖滾火箭客服中心貼心提醒您，請定期更改密碼並開啟二階段驗證登入，確保帳戶安全。
+                        提醒您帳號密碼不共用，以確保個人資訊安全。
+                    </div>
+                    <div class="btns-box">
+                        <button class="btn-style-pink">會員登入</button>
+                        <button class="btn-style-gray">返回首頁</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer-btn">
+                <a href="#" target="_blank">遊戲問題反映</a>
+                <a href="#" target="_blank">個人資料暨隱私權保護政策</a>
+            </div>
+            <div class="footer-info">
+                <p>服務時間：星期一至星期五，AM9:30~PM6:00</p>
+                <p>雷爵網絡科技股份有限公司 ©2022 Lager Network Technologies Inc. All rights reserved.</p>
+            </div>
+            <div class="lager-logo"><img src="images/lager_logo.svg" /></div>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script>
+        $(document).on('click', '#login-fail', function (e) {
+            swal({
+                html:
+                    '您好，<br>' +
+                    '您於2022/08/17 16:55 登入失敗<span class="pink">1</span> 次<br> ' +
+                    '<span class="pink">※請注意，如24小時內，登入失敗累積6次，為保護玩家帳號安全，系統將會自動暫時封鎖帳號，如您帳號被暫時封鎖，請至LRG客服中心進行詢問，謝謝。</span>',
+            })
+        });
+    </script>
+    <script>
+        // 傳送驗證碼倒數計時
+        $(function () {
+            var v_box = $(".phone-verify-box");
+            var phone_verify_btn = $(".get-phone-verify-button");
+            var location_select = $(".location-select");
+            var phone_input = $(".phone-input");
+            var phone_countdown = $(".phone-verify-countdown");
+            $(function () {
+                phone_verify_btn.click(settime);
+            })
+            var countdown = 5;
+            function settime() {
+                if (countdown == 0) {
+                    phone_countdown.html("重新傳送");
+                    return;
+                } else {
+                    location_select.attr("disabled", true);
+                    phone_input.attr("disabled", true);
+                    location_select.addClass("disabled");
+                    phone_input.addClass("disabled");
+                    phone_verify_btn.addClass("dn");
+                    phone_verify_btn.attr("disabled", true);
+                    phone_countdown.html(countdown + "s");
+                    countdown--;
+                    v_box.addClass("db");
+                }
+                setTimeout(settime, 1000);
+            }
+        })
+    </script>
+    <script>
+        $(document).on('click', '.qa', function (e) {
+            swal({
+                width: 800,
+                html:
+                    '<div class="question"><span class="qa-q">Q</span>認證時，收不到手機驗證訊息怎麼辦？</div>' +
+                    '<div class="answer"><span class="qa-a">A</span>請先確認電信業者或手機是否有申請或設定阻攔陌生來電或簡訊。</div>' +
+                    '<ul class="qa-ul-style"><li><div class="qa-subtitle">方法1.聯繫電信業者</div>各家電信公司有提供拒收企業簡訊之服務，可能導致無法正常接收驗證碼簡訊，請洽詢電信公司關閉該功能(此服務關閉後，約需3-4小時作業時間後才可重新接收簡訊)。<p></p></li><li><div class="qa-subtitle">方法2.調整手機設定</div><p>(1).iPhone系統：<br>「設定」>「訊息」>「過濾未知的寄件人」設定為關閉。<br>(2).Android系統：<br>各廠牌及版本操作方式有所差異，可先點選「訊息」>「設定」，確認是否關閉阻擋陌生簡訊或垃圾簡訊等功能，或是手機內是否安裝攔截app(例如：whoscall)，確認是否有設定攔截或封鎖相關廣告號碼，導致訊息發送失敗。</p></li><li><div class="qa-subtitle">方法3.使用來電攔截等APP信業者</div><p>運用相關APP設定廣告號碼攔截使用系統大量發送之簡訊信息，相關簡訊可能被手機判為廣告，建議您取消設定廣告號碼攔截或封鎖，避免簡訊發送失敗。</p></li></ul>'
+            })
+        });
+    </script>
+
+</body>
+
+</html>
