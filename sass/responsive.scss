@@ -10,6 +10,17 @@
     .game-item{
         width: 32%;
     }
+    // 2023/01/10 - by ossian
+    ul{
+        &.tab-menu{
+            li{
+                a{
+                    padding: 3vw 1.5vw;
+                    font-size: 3.5vw;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) { 
@@ -179,6 +190,10 @@
             width: 100%;
         }
     }
+    // swiper 在 768px 以下時，頂部需要空出選單的高度。 2023/01/10 - by ossian
+    .news-banner-group{
+        padding-top: 65px;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -238,5 +253,34 @@
             width: 100%;
         }
     }
+    // 2023/01/09 - by ossian
+    ul{
+        &.news-group
+        li{
+            a{
+                .news-title{
+                    font-size: 120%;
+                }
+            }
+        }
+    }
+    .page-set{
+        padding: unset;
+        background-color: unset;
+    }
+    ul{
+        &.tab-menu{
+            li{
+                a{
+                    padding: 5vw 2vw;
+                    font-size: 6vw;
+                }
+            }
+        }
+    }
+    .m-hiddent{
+        display: none;
+    }
+    // 2023/01/09 - end
 } 
 

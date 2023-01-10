@@ -8,6 +8,11 @@
   .game-item {
     width: 32%;
   }
+
+  ul.tab-menu li a {
+    padding: 3vw 1.5vw;
+    font-size: 3.5vw;
+  }
 }
 @media screen and (max-width: 768px) {
   .m-frame-box {
@@ -195,6 +200,10 @@
   .point-link img {
     width: 100%;
   }
+
+  .news-banner-group {
+    padding-top: 65px;
+  }
 }
 @media screen and (max-width: 580px) {
   .footer-btn {
@@ -264,5 +273,24 @@
   }
   .point-link img {
     width: 100%;
+  }
+
+  ul.news-group
+  li a .news-title {
+    font-size: 120%;
+  }
+
+  .page-set {
+    padding: unset;
+    background-color: unset;
+  }
+
+  ul.tab-menu li a {
+    padding: 5vw 2vw;
+    font-size: 6vw;
+  }
+
+  .m-hiddent {
+    display: none;
   }
 }
