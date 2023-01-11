@@ -482,208 +482,15 @@ body {
 
 .mem-cont {
   padding: 25px 60px 60px 60px;
-  	/* 
-  		2022/12/07 - by ossian
-  		
-  		新增 .o-set，目的如下：
-  		1. 移除 p 的行高設定，
-  		2. 改在 .men-cont.o-set 設定行高，避免影響到前人的設定值。
-  		3. 重建一些被 reset 清除的標籤樣式，方便企劃人員日後的維護。
-  
-  		目前受影響的頁面如下：
-  		1. privacy.html         2022/12/08
-  		2. cs_privacy.html      2022/12/08
-  		3. news-index.html      2023/01/09
-  		4. news-content.html    2023/01/09
-  
-  	*/
 }
 .mem-cont p {
   line-height: 24px;
 }
-.mem-cont.o-set {
-  color: #707070;
-  line-height: 24px;
-}
-.mem-cont.o-set ul, .mem-cont.o-set ol {
-  margin: 1em 1em 1em 2em;
-  padding: initial;
-  list-style: initial;
-}
-.mem-cont.o-set ul.none, .mem-cont.o-set ol.none {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.mem-cont.o-set p {
-  color: unset;
-  line-height: unset;
-}
-.mem-cont.o-set.p-break p {
-  padding-left: 2.5em;
-  text-align: justify;
-}
-.mem-cont.o-set.p-break ul, .mem-cont.o-set.p-break ol {
-  padding-left: 2em;
-}
-.mem-cont.o-set.p-break hgroup.content-title {
-  padding-bottom: 1em;
-}
-.mem-cont.o-set.p-break hgroup.content-title h1 {
-  padding-top: 0;
-  padding-bottom: 1em;
-  color: #E95389;
-  text-align: center;
-  border-bottom: 5px solid #eee;
-}
-.mem-cont.o-set h1, .mem-cont.o-set h2, .mem-cont.o-set h3, .mem-cont.o-set h4, .mem-cont.o-set h5, .mem-cont.o-set h6 {
-  color: black;
-  padding: 0.75em 0;
-}
-.mem-cont.o-set h1 {
-  font-size: 1.5em;
-}
-.mem-cont.o-set h2 {
-  font-size: 1.25em;
-}
-.mem-cont.o-set h3 {
-  font-size: 1.175em;
-}
-.mem-cont.o-set h4 {
-  font-size: 1.15em;
-}
-.mem-cont.o-set h5 {
-  font-size: 1.125em;
-}
-.mem-cont.o-set h6 {
-  font-size: 1em;
-}
-.mem-cont.o-set table {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 100%;
-  border-collapse: collapse;
-}
-.mem-cont.o-set table tr th {
-  text-align: center;
-  background-color: #F1F1F1;
-}
-.mem-cont.o-set table tr th, .mem-cont.o-set table tr td {
-  padding: 0.25em 0.75em;
-  border: 1px solid #C1C1C1;
-}
-.mem-cont.o-set table tr:hover {
-  background-color: #F8F8F8;
-}
-.mem-cont.o-set table tr:nth-child(1):hover {
-  background-color: unset;
-}
-.mem-cont.o-set img {
-  max-width: 100%;
-}
 
-.page-set {
-  	/* 
-  		2022/12/07 - by ossian
-  		
-  		新增 .o-set，目的如下：
-  		1. 移除 p 的行高設定，
-  		2. 改在 .men-cont.o-set 設定行高，避免影響到前人的設定值。
-  		3. 重建一些被 reset 清除的標籤樣式，方便企劃人員日後的維護。
-  
-  		目前受影響的頁面如下：
-  		1. privacy.html         2022/12/08
-  		2. cs_privacy.html      2022/12/08
-  		3. news-index.html      2023/01/09
-  		4. news-content.html    2023/01/09
-  
-  	*/
-}
-.page-set.o-set {
-  color: #707070;
-  line-height: 24px;
-}
-.page-set.o-set ul, .page-set.o-set ol {
-  margin: 1em 1em 1em 2em;
-  padding: initial;
-  list-style: initial;
-}
-.page-set.o-set ul.none, .page-set.o-set ol.none {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.page-set.o-set p {
-  color: unset;
-  line-height: unset;
-}
-.page-set.o-set.p-break p {
-  padding-left: 2.5em;
-  text-align: justify;
-}
-.page-set.o-set.p-break ul, .page-set.o-set.p-break ol {
-  padding-left: 2em;
-}
-.page-set.o-set.p-break hgroup.content-title {
+.page-set .content-title {
   padding-bottom: 1em;
 }
-.page-set.o-set.p-break hgroup.content-title h1 {
-  padding-top: 0;
-  padding-bottom: 1em;
-  color: #E95389;
-  text-align: center;
-  border-bottom: 5px solid #eee;
-}
-.page-set.o-set h1, .page-set.o-set h2, .page-set.o-set h3, .page-set.o-set h4, .page-set.o-set h5, .page-set.o-set h6 {
-  color: black;
-  padding: 0.75em 0;
-}
-.page-set.o-set h1 {
-  font-size: 1.5em;
-}
-.page-set.o-set h2 {
-  font-size: 1.25em;
-}
-.page-set.o-set h3 {
-  font-size: 1.175em;
-}
-.page-set.o-set h4 {
-  font-size: 1.15em;
-}
-.page-set.o-set h5 {
-  font-size: 1.125em;
-}
-.page-set.o-set h6 {
-  font-size: 1em;
-}
-.page-set.o-set table {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 100%;
-  border-collapse: collapse;
-}
-.page-set.o-set table tr th {
-  text-align: center;
-  background-color: #F1F1F1;
-}
-.page-set.o-set table tr th, .page-set.o-set table tr td {
-  padding: 0.25em 0.75em;
-  border: 1px solid #C1C1C1;
-}
-.page-set.o-set table tr:hover {
-  background-color: #F8F8F8;
-}
-.page-set.o-set table tr:nth-child(1):hover {
-  background-color: unset;
-}
-.page-set.o-set img {
-  max-width: 100%;
-}
-
-.page-set.o-set .content-title {
-  margin-bottom: 1em;
-}
-.page-set.o-set .content-title h1 {
+.page-set .content-title h2 {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
@@ -691,9 +498,9 @@ body {
   color: #E95389;
   border-bottom: 5px solid #eee;
 }
-.page-set.o-set .content-title h1 .tag em {
+.page-set .content-title h2 .tag em {
   display: inline-block;
-  padding: 0.1em 0.5em 0.15em;
+  padding: 0 0.35em 0.15em;
   font-style: normal;
   font-size: 75%;
   color: white;
@@ -1233,21 +1040,6 @@ body {
   background: #fff;
   width: calc(100% - 240px);
   padding: 40px;
-  	/* 
-  		2022/12/07 - by ossian
-  		
-  		新增 .o-set，目的如下：
-  		1. 移除 p 的行高設定，
-  		2. 改在 .men-cont.o-set 設定行高，避免影響到前人的設定值。
-  		3. 重建一些被 reset 清除的標籤樣式，方便企劃人員日後的維護。
-  
-  		目前受影響的頁面如下：
-  		1. privacy.html         2022/12/08
-  		2. cs_privacy.html      2022/12/08
-  		3. news-index.html      2023/01/09
-  		4. news-content.html    2023/01/09
-  
-  	*/
 }
 .r-frame-box .t1 {
   font-size: 25px;
@@ -1264,86 +1056,6 @@ body {
 .r-frame-box p {
   margin-bottom: 25px;
   color: #4D4D4D;
-}
-.r-frame-box.o-set {
-  color: #707070;
-  line-height: 24px;
-}
-.r-frame-box.o-set ul, .r-frame-box.o-set ol {
-  margin: 1em 1em 1em 2em;
-  padding: initial;
-  list-style: initial;
-}
-.r-frame-box.o-set ul.none, .r-frame-box.o-set ol.none {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.r-frame-box.o-set p {
-  color: unset;
-  line-height: unset;
-}
-.r-frame-box.o-set.p-break p {
-  padding-left: 2.5em;
-  text-align: justify;
-}
-.r-frame-box.o-set.p-break ul, .r-frame-box.o-set.p-break ol {
-  padding-left: 2em;
-}
-.r-frame-box.o-set.p-break hgroup.content-title {
-  padding-bottom: 1em;
-}
-.r-frame-box.o-set.p-break hgroup.content-title h1 {
-  padding-top: 0;
-  padding-bottom: 1em;
-  color: #E95389;
-  text-align: center;
-  border-bottom: 5px solid #eee;
-}
-.r-frame-box.o-set h1, .r-frame-box.o-set h2, .r-frame-box.o-set h3, .r-frame-box.o-set h4, .r-frame-box.o-set h5, .r-frame-box.o-set h6 {
-  color: black;
-  padding: 0.75em 0;
-}
-.r-frame-box.o-set h1 {
-  font-size: 1.5em;
-}
-.r-frame-box.o-set h2 {
-  font-size: 1.25em;
-}
-.r-frame-box.o-set h3 {
-  font-size: 1.175em;
-}
-.r-frame-box.o-set h4 {
-  font-size: 1.15em;
-}
-.r-frame-box.o-set h5 {
-  font-size: 1.125em;
-}
-.r-frame-box.o-set h6 {
-  font-size: 1em;
-}
-.r-frame-box.o-set table {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 100%;
-  border-collapse: collapse;
-}
-.r-frame-box.o-set table tr th {
-  text-align: center;
-  background-color: #F1F1F1;
-}
-.r-frame-box.o-set table tr th, .r-frame-box.o-set table tr td {
-  padding: 0.25em 0.75em;
-  border: 1px solid #C1C1C1;
-}
-.r-frame-box.o-set table tr:hover {
-  background-color: #F8F8F8;
-}
-.r-frame-box.o-set table tr:nth-child(1):hover {
-  background-color: unset;
-}
-.r-frame-box.o-set img {
-  max-width: 100%;
 }
 
 .report-btns {
@@ -1742,30 +1454,179 @@ body {
 /* -------------------------------------
  * 新聞公告
 ---------------------------------------*/
-.r-frame-box.none {
+	/* 
+		2022/12/07 - by ossian
+		
+		新增 .o-set，目的如下：
+		1. 重建一些被 reset 清除的標籤樣式，方便企劃人員日後的維護。
+
+		目前受影響的頁面如下：
+		1. privacy.html         2022/12/08
+		2. cs_privacy.html      2022/12/08
+		3. news-index.html      2023/01/09
+		4. news-content.html    2023/01/09
+		5. cs_privacy.html      2023/01/09
+
+	*/
+.o-set {
+  color: #707070;
+  line-height: 1.15;
+  word-break: break-all;
+}
+.o-set ul, .o-set ol {
+  margin: 1em 1em 1em 2em;
+  padding: initial;
+  line-height: 150%;
+  list-style: initial;
+}
+.o-set ul.none, .o-set ol.none {
+  margin: 0;
   padding: 0;
+  list-style: none;
+}
+.o-set p {
+  color: unset;
+  line-height: 150%;
+  text-align: justify;
+}
+.o-set h1, .o-set h2, .o-set h3, .o-set h4, .o-set h5, .o-set h6 {
+  color: initial;
+  padding: 0.65em 0;
+}
+.o-set h1 {
+  font-size: 1.5em;
+}
+.o-set h2 {
+  font-size: 1.25em;
+}
+.o-set h3 {
+  font-size: 1.175em;
+}
+.o-set h4 {
+  font-size: 1.15em;
+}
+.o-set h5 {
+  font-size: 1.125em;
+}
+.o-set h6 {
+  font-size: 1em;
+}
+.o-set a {
+  color: #E95389;
+  border-bottom: 1px dotted rgba(255, 64, 91, 0.3);
+  transition: border-bottom 0.3s;
+}
+.o-set a:hover {
+  border-bottom: 1px dotted #ff405b;
+}
+.o-set table {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  border-collapse: collapse;
+}
+.o-set table tr th {
+  text-align: center;
+  background-color: #F1F1F1;
+}
+.o-set table tr th, .o-set table tr td {
+  padding: 0.25em 0.75em;
+  border: 1px solid #C1C1C1;
+}
+.o-set table tr:hover {
+  background-color: #F8F8F8;
+}
+.o-set table tr:nth-child(1):hover {
+  background-color: unset;
+}
+.o-set img {
+  max-width: 100%;
+}
+
+.r-frame-box.none {
+  padding: unset;
   border: unset;
   background-color: transparent;
 }
 
 .aside-menu.none {
-  border: none;
-}
-
-.aside-menu {
-  position: sticky;
-  top: 0;
+  border: unset;
 }
 
 .aside-menu ul li a {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.aside-menu > ul {
-  margin-bottom: 1em;
+.tos-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 2em;
+  height: 450px;
+  border: 1px solid #eee;
+  border-radius: 10px;
 }
-.aside-menu > ul:nth-last-child(1) {
+.tos-content:nth-last-child(1) {
   margin-bottom: unset;
+}
+.tos-content h2 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.tos-content h2.border-b-5 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #E95389;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+.tos-content ol {
+  margin-left: 3em;
+  list-style-type: cjk-ideographic;
+  font-size: 0.85em;
+}
+.tos-content ul.cjk {
+  list-style-type: cjk-ideographic;
+}
+
+.table-frame {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+table.game-manage {
+  margin: 0 auto;
+  font-size: 0.85em;
+  width: 800px;
+}
+table.game-manage tr td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  vertical-align: text-top;
+  border-color: #eee;
+}
+
+dl.gm-qa {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #eee;
+}
+dl.gm-qa dt, dl.gm-qa dd {
+  margin: 0;
+  padding: 0;
+}
+dl.gm-qa dt {
+  padding: 1rem;
+  font-size: 1.1em;
+  color: #E95389;
+  background-color: #f2f2f2;
+}
+dl.gm-qa dd > .p-1 {
+  line-height: 1.25;
+  border-bottom: 1px solid #eee;
+}
+dl.gm-qa dd > ul {
+  margin-top: 0;
 }
 
 .p-0 {
@@ -1784,9 +1645,30 @@ body {
   padding: 3em;
 }
 
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
 .page-set {
   padding: 3em;
   background-color: white;
+}
+
+.content-title {
+  padding-bottom: 1em;
+}
+.content-title h1 {
+  padding-top: 0;
+  padding-bottom: 1em;
+  color: #E95389;
 }
 
 ul.tab-menu {
@@ -1873,6 +1755,9 @@ ul.news-group li a .news-public-date span.icon-cal {
 }
 ul.news-group li:hover h2.news-title {
   color: #4D4D4D;
+}
+ul.news-group li:nth-last-child(1) {
+  margin-bottom: unset;
 }
 
 .page-bar {

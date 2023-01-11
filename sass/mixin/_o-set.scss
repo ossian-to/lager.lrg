@@ -4,25 +4,25 @@
 		2022/12/07 - by ossian
 		
 		新增 .o-set，目的如下：
-		1. 移除 p 的行高設定，
-		2. 改在 .men-cont.o-set 設定行高，避免影響到前人的設定值。
-		3. 重建一些被 reset 清除的標籤樣式，方便企劃人員日後的維護。
+		1. 重建一些被 reset 清除的標籤樣式，方便企劃人員日後的維護。
 
 		目前受影響的頁面如下：
 		1. privacy.html         2022/12/08
 		2. cs_privacy.html      2022/12/08
 		3. news-index.html      2023/01/09
 		4. news-content.html    2023/01/09
+		5. cs_privacy.html      2023/01/09
 
 	*/
 
-	&.o-set{
+	.o-set{
 		color: $m-gray;
-		line-height: 24px;
-		// 恢復 .men-cont.o-set 下面的 ul, ol 樣式 2022/12/07 - by ossian
+		line-height: 1.15;
+		word-break: break-all;
 		ul, ol{
 			margin: 1em 1em 1em 2em;
 			padding: initial;
+			line-height: 150%;
 			list-style: initial;
 			&.none{
 				margin: 0;
@@ -32,34 +32,13 @@
 		}
 		p{
 			color: unset;
-			line-height: unset;
-		}
-		&.p-break{
-			p{
-				padding-left: 2.5em;
-				text-align: justify;
-			}
-			ul,ol{
-				padding-left: 2em;
-			}
-			hgroup{
-				&.content-title{
-					padding-bottom: 1em;
-					h1{
-						padding-top: 0;
-						padding-bottom: 1em;
-						color: $pink;
-						text-align: center;
-						border-bottom: 5px solid #eee;
-					}
-				}
-			}
+			line-height: 150%;
+			text-align: justify;
 		}
 		// 恢復標題的大小
 		h1, h2, h3, h4, h5, h6{
-			color: black;
-			padding: 0.75em 0;
-			// color: black;
+			color: initial;
+			padding: 0.65em 0;
 		}
 		h1{
 			font-size: 1.5em;
@@ -78,6 +57,14 @@
 		}
 		h6{
 			font-size: 1em;
+		}
+		a{
+			color: $pink;
+			border-bottom: 1px dotted rgba(338,64,91,0.3);
+			transition: border-bottom 0.3s;
+			&:hover{
+				border-bottom: 1px dotted rgba(338,64,91,1);
+			}
 		}
 		// 預設的 table 樣式 2022/12/07 - by ossian
 		table{

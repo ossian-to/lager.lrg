@@ -10,8 +10,8 @@
   }
 
   ul.tab-menu li a {
-    padding: 3vw 1.5vw;
-    font-size: 3.5vw;
+    padding-left: unset;
+    padding-right: unset;
   }
 }
 @media screen and (max-width: 768px) {
@@ -281,16 +281,19 @@
   }
 
   .page-set {
-    padding: unset;
-    background-color: unset;
+    padding: 7%;
   }
 
   ul.tab-menu li a {
-    padding: 5vw 2vw;
-    font-size: 6vw;
+    padding: 4.5vw 1.75vw;
+    font-size: 5vw;
   }
 
   .m-hiddent {
     display: none;
+  }
+
+  .page-set .content-title h2 {
+    grid-template-columns: 1fr;
   }
 }

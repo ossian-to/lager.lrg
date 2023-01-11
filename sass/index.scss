@@ -412,16 +412,11 @@ body {
     p{
         line-height: 24px;
     }
-
-    @include o-set(); // 定義一組 .o-set 的 class，避免影響前人的設定 2022/12/07 - by ossian
-
 }
-.page-set{
-    @include o-set(); // 定義一組 .o-set 的 class，避免影響前人的設定 2023/01/10 - by ossian
-}
-.page-set.o-set .content-title{
-    margin-bottom: 1em;
-    h1{
+
+.page-set .content-title{
+    padding-bottom: 1em;
+    h2{
         display: grid;
         grid-template-columns: auto 1fr;
         gap: 10px;
@@ -431,7 +426,7 @@ body {
         .tag{
             em{
                 display: inline-block;
-                padding: 0.1em 0.5em 0.15em;
+                padding: 0 0.35em 0.15em;
                 font-style: normal;
                 font-size: 75%;
                 color: white;
@@ -965,8 +960,6 @@ body {
         margin-bottom: 25px;
         color: #4D4D4D;
     }
-    @include o-set(); // 定義一組 .o-set 的 class，避免影響前人的設定 2022/12/07 - by ossian
-
 }
 
 
@@ -1385,30 +1378,94 @@ body {
  * 新聞公告
 ---------------------------------------*/
 
+@include o-set(); // 定義一組 .o-set 的 class，避免影響前人的設定 2023/01/10 - by ossian
+
 .r-frame-box.none{
-    padding: 0;
+    padding: unset;
     border: unset;
     background-color: transparent;
 }
 .aside-menu.none{
-    border:none;
-}
-.aside-menu{
-    position: sticky;
-    top: 0;
+    border: unset;
 }
 .aside-menu ul li a{
     transition: background-color 0.3s, color 0.3s;
 }
-.aside-menu{
-    > ul{
-        margin-bottom: 1em;
-        &:nth-last-child(1){
-            margin-bottom: unset;
+.tos-content{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 2em;
+    height: 450px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    &:nth-last-child(1){
+        margin-bottom: unset;
+    }
+    h2{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        &.border-b-5{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            color: $pink;
+            background-color: white;
+            border-bottom: 1px solid #eee;
         }
+    }
+    ol{
+        margin-left: 3em;
+        list-style-type: cjk-ideographic;
+        font-size: 0.85em;
+    }
+    ul.cjk{
+        list-style-type: cjk-ideographic;
     }
 }
 
+.table-frame{
+    overflow-x: scroll;
+    width: 100%;
+}
+table.game-manage{
+    margin: 0 auto;
+    font-size: 0.85em;
+    width: 800px;
+    tr{
+        td{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            vertical-align:text-top;
+            border-color: #eee;
+        }
+    }
+}
+dl{
+    &.gm-qa{
+        margin: 0;
+        padding: 0;
+        border: 1px solid #eee;
+        dt, dd{
+            margin: 0;
+            padding: 0;
+        }
+        dt{
+            padding: 1rem;
+            font-size: 1.1em;
+            color: $pink;
+            background-color: #f2f2f2;
+        }
+        dd{
+            >.p-1{
+                line-height: 1.25;
+                border-bottom: 1px solid #eee;
+            }
+            > ul{
+                margin-top: 0;
+            }
+        }
+    }
+}
 .p-0{
     padding: 0;
 }
@@ -1421,10 +1478,30 @@ body {
 .p-3{
     padding: 3em;
 }
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+.center{
+	text-align: center;
+}
+
 .page-set{
     padding: 3em;
     background-color: white;
 }
+.content-title{
+    padding-bottom: 1em;
+    h1{
+        padding-top: 0;
+        padding-bottom: 1em;
+        color: $pink;
+        // border-bottom: 5px solid #eee;
+    }
+}
+
 ul{
     &.tab-menu{
         display: grid;
@@ -1524,6 +1601,9 @@ ul{
                 h2.news-title{
                     color: $d-gray;
                 }
+            }
+            &:nth-last-child(1){
+                margin-bottom: unset;
             }
         }
     }

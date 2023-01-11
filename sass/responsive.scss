@@ -15,8 +15,8 @@
         &.tab-menu{
             li{
                 a{
-                    padding: 3vw 1.5vw;
-                    font-size: 3.5vw;
+                    padding-left: unset;
+                    padding-right: unset;
                 }
             }
         }
@@ -264,23 +264,30 @@
             }
         }
     }
+    // 2023/01/09 - by ossian
     .page-set{
-        padding: unset;
-        background-color: unset;
+        padding: 7%;
+        // background-color: unset;
     }
+    // 2023/01/09 - by ossian
     ul{
         &.tab-menu{
             li{
                 a{
-                    padding: 5vw 2vw;
-                    font-size: 6vw;
+                    padding: 4.5vw 1.75vw;
+                    font-size: 5vw;
                 }
             }
         }
     }
+    // 2023/01/09 - by ossian
     .m-hiddent{
         display: none;
     }
-    // 2023/01/09 - end
+    .page-set .content-title{
+        h2{
+            grid-template-columns: 1fr;
+        }
+    }
 } 
 
