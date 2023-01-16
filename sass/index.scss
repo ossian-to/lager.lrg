@@ -1424,6 +1424,7 @@ body {
 }
 
 .table-frame{
+    display: none;
     overflow-x: scroll;
     width: 100%;
 }
@@ -1440,31 +1441,13 @@ table.game-manage{
         }
     }
 }
-dl{
-    &.gm-qa{
-        margin: 0;
-        padding: 0;
-        border: 1px solid #eee;
-        dt, dd{
-            margin: 0;
-            padding: 0;
-        }
-        dt{
-            padding: 1rem;
-            font-size: 1.1em;
-            color: $pink;
-            background-color: #f2f2f2;
-        }
-        dd{
-            >.p-1{
-                line-height: 1.25;
-                border-bottom: 1px solid #eee;
-            }
-            > ul{
-                margin-top: 0;
-            }
-        }
-    }
+mark{
+    color: $yellow-3;
+    background-color: $yellow-1;
+}
+.underline{
+    color: $yellow-3;
+    border-bottom: 1px dashed $yellow-2;
 }
 .p-0{
     padding: 0;
@@ -1657,6 +1640,45 @@ ul{
     }
 }
 
+
+// 違反管理與處罰事項說明
+
+dl{
+    &.gm-qa{
+        margin: 1em 0;
+        padding: 0;
+        border: 1px solid #eee;
+        dt, dd{
+            margin: 0;
+            padding: 0;
+        }
+        dt{
+            padding: 1rem;
+            // font-size: 1.25em;
+            color: $pink;
+            background-color: $gray-1;
+        }
+        dd{
+            >.p-1{
+                line-height: 1.5;
+                text-align: justify;
+                border-bottom: 1px solid #eee;
+            }
+            > ul{
+                margin: 0 1em 1em 1em;
+                list-style: none;
+                li{
+                    h4{
+                        padding-bottom: unset;
+                        color: $blue-2;
+                        font-size: 0.975em;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // 新聞公告的 Swiper 設定
 
 .news-banner-group{
@@ -1666,5 +1688,79 @@ ul{
     img{
         width: 100%;
         // height: 550px;
+    }
+}
+
+// 內嵌到 APP 的新聞公告
+
+.webview-popup{
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 800px;
+    width: 100%;
+    .webview-pb-3{
+        padding-bottom: 3em;
+    }
+}
+
+// POPUP RWD 選單
+
+.pop-nav-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    input[type="checkbox"]{
+        display: none;
+        &:checked{
+            +.nav-rwd-menu{
+                width: 80%;
+                li{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .switch-open,
+    .switch-close {
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .switch-close{
+        background-image: url(../images/close.png);
+        background-color: $pink;
+    }
+    .nav-rwd-menu{
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        max-width: 800px;
+        width: 0;
+        height: 100%;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+        transition: width 0.6s;
+        li{
+            padding: 0.5em 0;
+            opacity: 0;
+            transition: opacity 0.2s;
+            a{
+                color: $gray-8;
+                transition: color 0.3s;
+                &:hover{
+                    color: $pink;
+                }
+            }
+        }
     }
 }

@@ -1590,6 +1590,7 @@ body {
 }
 
 .table-frame {
+  display: none;
   overflow-x: scroll;
   width: 100%;
 }
@@ -1606,27 +1607,14 @@ table.game-manage tr td {
   border-color: #eee;
 }
 
-dl.gm-qa {
-  margin: 0;
-  padding: 0;
-  border: 1px solid #eee;
+mark {
+  color: #b6a806;
+  background-color: #fff9ba;
 }
-dl.gm-qa dt, dl.gm-qa dd {
-  margin: 0;
-  padding: 0;
-}
-dl.gm-qa dt {
-  padding: 1rem;
-  font-size: 1.1em;
-  color: #E95389;
-  background-color: #f2f2f2;
-}
-dl.gm-qa dd > .p-1 {
-  line-height: 1.25;
-  border-bottom: 1px solid #eee;
-}
-dl.gm-qa dd > ul {
-  margin-top: 0;
+
+.underline {
+  color: #b6a806;
+  border-bottom: 1px dashed #e7db50;
 }
 
 .p-0 {
@@ -1803,10 +1791,107 @@ ul.news-group li:nth-last-child(1) {
   background-color: #E95389;
 }
 
+dl.gm-qa {
+  margin: 1em 0;
+  padding: 0;
+  border: 1px solid #eee;
+}
+dl.gm-qa dt, dl.gm-qa dd {
+  margin: 0;
+  padding: 0;
+}
+dl.gm-qa dt {
+  padding: 1rem;
+  color: #E95389;
+  background-color: #f1f1f1;
+}
+dl.gm-qa dd > .p-1 {
+  line-height: 1.5;
+  text-align: justify;
+  border-bottom: 1px solid #eee;
+}
+dl.gm-qa dd > ul {
+  margin: 0 1em 1em 1em;
+  list-style: none;
+}
+dl.gm-qa dd > ul li h4 {
+  padding-bottom: unset;
+  color: #379ad8;
+  font-size: 0.975em;
+}
+
 .news-banner-group {
   width: 100%;
   background-color: gray;
 }
 .news-banner-group img {
   width: 100%;
+}
+
+.webview-popup {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 50px;
+  max-width: 800px;
+  width: 100%;
+}
+.webview-popup .webview-pb-3 {
+  padding-bottom: 3em;
+}
+
+.pop-nav-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.pop-nav-menu input[type="checkbox"] {
+  display: none;
+}
+.pop-nav-menu input[type="checkbox"]:checked + .nav-rwd-menu {
+  width: 80%;
+}
+.pop-nav-menu input[type="checkbox"]:checked + .nav-rwd-menu li {
+  opacity: 1;
+}
+.pop-nav-menu .switch-open,
+.pop-nav-menu .switch-close {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pop-nav-menu .switch-close {
+  background-image: url(../images/close.png);
+  background-color: #E95389;
+}
+.pop-nav-menu .nav-rwd-menu {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  max-width: 800px;
+  width: 0;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.6s;
+}
+.pop-nav-menu .nav-rwd-menu li {
+  padding: 0.5em 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.pop-nav-menu .nav-rwd-menu li a {
+  color: #474747;
+  transition: color 0.3s;
+}
+.pop-nav-menu .nav-rwd-menu li a:hover {
+  color: #E95389;
 }
