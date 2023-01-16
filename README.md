@@ -19,6 +19,7 @@
     - news-index.html (新聞首頁)
     - news-content.html (新聞內容頁)
     - cs_privacy.html (隱私權頁面)
+  - 2023/01/16 頁面確認，送交閒閒套程式
 
 ## 前人網頁裡使用的框架或套件
 
