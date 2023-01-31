@@ -1,6 +1,6 @@
 # 搖滾火箭
 
-## 雷區
+## 使用前請先詳閱
 
   - **在對搖滾火箭的專案進行任何修改前，請先詳閱「環境設定注意事項」的說明**
 
@@ -20,6 +20,7 @@
     - news-content.html (新聞內容頁)
     - cs_privacy.html (隱私權頁面)
   - 2023/01/16 頁面確認，送交閒閒套程式
+  - 2023/01/31 調整 swiper 的錯誤
 
 ## 前人網頁裡使用的框架或套件
 
@@ -29,6 +30,14 @@
   - [Sweetalert2](https://sweetalert2.github.io/)
   - [queryLoader2](https://github.com/Gaya/queryloader2) 
   - [SuperSlide](http://www.superslide2.com)
+
+  閒閒於 2023/01/30 建議將套件縮減成下面三個
+
+  - [jQuery](https://jquery.com/)
+  - [Sweetalert2](https://sweetalert2.github.io/)
+  - [Swiper](https://swiperjs.com)
+
+
 
 
 ---
