@@ -943,6 +943,13 @@ body {
     background: #fff;
     width: calc(100% - 240px);
     padding: 40px;
+
+    &.none{
+        // 2023/3/23 - by ossian
+        border: none;
+        background: none;
+        padding: none;
+    }
         
     .t1{
         font-size: 25px; 
@@ -961,7 +968,28 @@ body {
         color: #4D4D4D;
     }
 }
-
+.r-frame-container{
+    margin-bottom: 1em;
+    border: 1px solid #EBEBEB;
+    background: #fff;
+    width: calc(100% - 240px);
+    padding: 40px;
+    .title-style{
+        padding: 0 25px;
+        border-bottom: none;
+    }
+    fieldset{
+        padding: 1em 1.5em;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        .t2{
+            margin-bottom: 0;
+            padding: 0 0.5em;
+            text-align: center;
+            font-size: 1.15em;
+        }
+    }
+}
 
 
 

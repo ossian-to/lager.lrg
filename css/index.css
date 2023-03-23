@@ -1041,6 +1041,11 @@ body {
   width: calc(100% - 240px);
   padding: 40px;
 }
+.r-frame-box.none {
+  border: none;
+  background: none;
+  padding: none;
+}
 .r-frame-box .t1 {
   font-size: 25px;
   font-weight: bold;
@@ -1056,6 +1061,29 @@ body {
 .r-frame-box p {
   margin-bottom: 25px;
   color: #4D4D4D;
+}
+
+.r-frame-container {
+  margin-bottom: 1em;
+  border: 1px solid #EBEBEB;
+  background: #fff;
+  width: calc(100% - 240px);
+  padding: 40px;
+}
+.r-frame-container .title-style {
+  padding: 0 25px;
+  border-bottom: none;
+}
+.r-frame-container fieldset {
+  padding: 1em 1.5em;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.r-frame-container fieldset .t2 {
+  margin-bottom: 0;
+  padding: 0 0.5em;
+  text-align: center;
+  font-size: 1.15em;
 }
 
 .report-btns {
