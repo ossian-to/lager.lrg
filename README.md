@@ -10,7 +10,7 @@
 
   - 2022/12/08 接手搖滾火箭
   - 2022/12/09 新增隱私權頁面
-    - privacy.html (尼莫最後選擇這頁)
+    - privacy.html
     - cs_privacy.html
   - 2023/01/04 尼莫提出新的製作需求 (首頁、公告及遊戲內嵌公告)
   - 2023/01/09 專案上 [Github](https://github.com/ossian-to/lager.lrg.git)
