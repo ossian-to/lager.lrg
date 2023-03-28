@@ -40,7 +40,10 @@
   - [Swiper](https://swiperjs.com)
 
 
+  閒閒建議移除 Sweetalert2，建議的套件剩下面兩個
 
+  - [jQuery](https://jquery.com/)
+  - [Swiper](https://swiperjs.com)
 
 ---
 
