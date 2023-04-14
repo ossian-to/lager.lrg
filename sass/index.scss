@@ -895,6 +895,7 @@ body {
     border: 1px solid #EBEBEB;
     margin-right: 20px;
     ul{
+        width: 100%;
         background: #fff;
         li{
             width: 100%;
@@ -972,8 +973,8 @@ body {
     margin-bottom: 1em;
     border: 1px solid #EBEBEB;
     background: #fff;
-    width: calc(100% - 240px);
-    padding: 40px;
+    width: 100%;
+    // padding: 40px;
     .title-style{
         padding: 0 25px;
         border-bottom: none;

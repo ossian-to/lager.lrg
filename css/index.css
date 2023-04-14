@@ -997,6 +997,7 @@ body {
   margin-right: 20px;
 }
 .aside-menu ul {
+  width: 100%;
   background: #fff;
 }
 .aside-menu ul li {
@@ -1067,8 +1068,7 @@ body {
   margin-bottom: 1em;
   border: 1px solid #EBEBEB;
   background: #fff;
-  width: calc(100% - 240px);
-  padding: 40px;
+  width: 100%;
 }
 .r-frame-container .title-style {
   padding: 0 25px;

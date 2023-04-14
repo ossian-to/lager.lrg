@@ -22,7 +22,12 @@
         }
     }
 }
-
+@media screen and (min-width: 769px) {
+    .r-frame-container{
+        padding: 1em;
+        padding: 40px;
+    }
+}
 @media screen and (max-width: 768px) { 
 	.m-frame-box{
         width: 90%;
@@ -150,6 +155,9 @@
             }
         }
         
+    }
+    .r-frame-container{
+        padding: 7%;
     }
     .r-frame-box{
         width: 100%;
