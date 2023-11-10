@@ -107,6 +107,10 @@ body {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .wrap {
   width: 100%;
   min-width: 120px;
@@ -1494,6 +1498,8 @@ body {
 		3. news-index.html      2023/01/09
 		4. news-content.html    2023/01/09
 		5. cs_privacy.html      2023/01/09
+		6. point_index.html     2023/11/07
+		7. point_index_2.html   2023/11/08
 
 	*/
 .o-set {
@@ -1569,6 +1575,164 @@ body {
 }
 .o-set img {
   max-width: 100%;
+}
+.o-set ul.games-list {
+  display: grid;
+  gap: 1em;
+  margin: 0;
+  padding: 0 0 1em 0;
+  list-style: none;
+}
+.o-set ul.games-list li {
+  border: 1px solid #e2e2e2;
+  border-bottom: 5px solid #E95389;
+}
+.o-set ul.games-list li h3 {
+  padding: 0.5rem;
+}
+.o-set .swiper-container {
+  padding-bottom: 2em;
+}
+
+.btns-box.gap {
+  gap: 0.5em;
+}
+.btns-box.gap .btn-style-pink,
+.btns-box.gap .btn-style-gray {
+  padding: 0.5em;
+  height: unset;
+  line-height: 1.15;
+}
+.btns-box.gap .legal-representative-agrees {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+ul.payment-method {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.payment-method > li {
+  max-width: 350px;
+  border: 1px solid #e2e2e2;
+}
+ul.payment-method > li h3, ul.payment-method > li h4 {
+  text-align: center;
+}
+ul.payment-method > li h3 em, ul.payment-method > li h4 em {
+  color: #E95389;
+}
+ul.payment-method > li h4 {
+  font-size: 0.85;
+  color: #848484;
+  border-top: 1px solid #e2e2e2;
+}
+
+.pay-content {
+  padding: 0 0.5em 0.5em;
+}
+
+ul.pays {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  list-style: none;
+}
+ul.pays li {
+  width: 50%;
+  text-align: center;
+  border: 1px solid transparent;
+}
+ul.pays li img {
+  width: 90%;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+ul.pays li img:hover {
+  filter: grayscale(0%);
+}
+
+.content-title.center {
+  padding-bottom: unset;
+}
+
+table.table {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+table.table caption {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: 1px solid #C1C1C1;
+  border-bottom: unset;
+}
+table.table caption em {
+  color: #E95389;
+}
+
+ul.btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin: 0;
+  padding: 1em 0 0 0;
+  list-style: none;
+}
+ul.btn-group li button {
+  width: 100%;
+}
+
+dl.pay-lay {
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+dl.pay-lay dd {
+  margin: 0;
+  padding: 0;
+}
+dl.pay-lay dd:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.pay-method {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.pay-method li {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+ul.pay-method li:hover {
+  box-shadow: unset;
+  transform: translateY(5px);
+}
+ul.pay-method li a img {
+  width: 100%;
+}
+
+.right.p {
+  padding: 0.5em 0 0 0;
+}
+.right.p em {
+  color: #E95389;
 }
 
 .r-frame-box.none {
@@ -1921,4 +2085,55 @@ dl.gm-qa dd > ul li h4 {
 }
 .pop-nav-menu .nav-rwd-menu li a:hover {
   color: #E95389;
+}
+
+/* modal的基本樣式 */
+.modal {
+  overflow: auto;
+  visibility: hidden;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+  /* 顯示modal的樣式 */
+}
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s;
+  /* 顯示modal內容的樣式 */
+}
+.modal.show .modal-content {
+  transform: translate(-50%, -50%);
+}
+
+/* modal內容的樣式 */
+.modal-content {
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow-y: scroll;
+  transform: translate(-50%, -80%);
+  max-width: 750px;
+  width: calc(100% - 2em);
+  height: 90%;
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+/* 關閉按鈕的樣式 */
+.close-modal {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
 }

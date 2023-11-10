@@ -1,10 +1,20 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import "default";
+
+// 儲值服務 - 選擇產品 2023/11/08
+@media screen and (min-width: 1201px){
+    ul.games-list{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 @media screen and (max-width: 1200px) {
   .inner{
     padding: 0 4%;
   }
-
+  ul.games-list{
+    grid-template-columns: 1fr 1fr; // 儲值服務 - 選擇產品 2023/11/08
+  }
 }
 @media screen and (max-width: 1024px) {
     .game-item{
@@ -21,12 +31,19 @@
             }
         }
     }
+
 }
 @media screen and (min-width: 769px) {
     .r-frame-container{
         padding: 1em;
         padding: 40px;
     }
+    dl.pay-lay{
+        flex-wrap: nowrap;
+		dd{
+			width: calc(50% - 1em);
+		}
+	}
 }
 @media screen and (max-width: 768px) { 
 	.m-frame-box{
@@ -201,7 +218,16 @@
     // swiper 在 768px 以下時，頂部需要空出選單的高度。 2023/01/10 - by ossian
     .news-banner-group{
         padding-top: 65px;
+        &.non{
+            padding-top: unset; // 修正儲值服務的banner設定 2023/11/09 - by ossian
+        }
     }
+    dl.pay-lay{
+        flex-wrap: wrap;
+		dd{
+			width: 100%;
+		}
+	}
 }
 
 @media screen and (max-width: 580px) {
@@ -297,5 +323,71 @@
             grid-template-columns: 1fr;
         }
     }
-} 
+    // 2023/11/07 儲值服務
+    .btns-box{
+        flex-wrap: wrap;
+        &.gap{
+            .btn-style-pink,
+            .btn-style-gray{
+                width: 100%;
+                height: 60px;
+            }
+        }
+    }
+    ul.games-list{
+        grid-template-columns: 1fr; // 儲值服務 - 選擇產品 2023/11/08
+    }
+    .o-set{
+        table{
+            thead{
+                tr{
+                    th{
+                        padding: 0.5rem;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        padding: 0.5rem;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 儲值服務-選擇付款方式 2023/11/08
+@media screen and (min-width: 451px){
+    ul.pay-method{
+        li{
+            max-width: 200px;
+        }
+    }
+    dl.pay-lay{
+		dd{
+			&:nth-child(1){
+				padding: 1em;
+				background-color: $gray-1;
+			}
+		}
+	}
+}
+@media screen and (max-width: 450px){
+    ul.pay-method{
+        justify-content: center;
+        li{
+            max-width: 100%;
+        }
+    }
+    dl.pay-lay{
+		dd{
+			&:nth-child(1){
+				padding: 0;
+				background-color: unset;
+			}
+		}
+	}
+}
 
